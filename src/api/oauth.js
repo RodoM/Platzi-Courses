@@ -2,8 +2,8 @@
 import { post } from 'axios'
 
 // Cogemos los datos de nuestra cuenta de Blizzard
-const clientId = '5c957443ed20446099e060c9a01476db'
-const clientSecret = 'nn014Im5yrNOUD0fC1uPvyew5894vvhU'
+const clientId = process.env.VUE_APP_CLIENT_ID
+const clientSecret = process.env.VUE_APP_CLIENT_SECRET
 
 // API URL para hacer oauth
 const region = 'eu'
